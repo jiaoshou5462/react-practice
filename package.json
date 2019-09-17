@@ -1,0 +1,50 @@
+{
+  "name": "personal-fromtend",
+  "version": "1.0.0",
+  "author": "dyc",
+  "private": true,
+  "scripts": {
+    "build": "cross-env http_env=build webpack -p --config webpack/webpack.prod.js",
+    "dev": "cross-env http_env=dev webpack-dev-server --hot --open --config webpack/webpack.beta.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "postcss-loader": "^3.0.0",
+    "react-hot-loader": "^4.12.12",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "antd": "^3.20.3",
+    "expose-loader": "^0.7.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "url-search-params-polyfill": "^5.0.0"
+  },
+  "main": "main.js",
+  "keywords": [],
+  "license": "ISC",
+  "description": ""
+}
