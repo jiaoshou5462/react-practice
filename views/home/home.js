@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import css from './home.less';
+import { Input } from 'antd';
+import { Button } from 'antd';
+import PropTypes from 'prop-types';
 
 export default class Home extends Component {
 	constructor(props){
@@ -7,17 +10,20 @@ export default class Home extends Component {
 		this.state = {
 			num:0,
 		}
-    }
+	}
+	static contextTypes = {
+		salary: PropTypes.number.isRequired,
+   	}
     render() {
         return (
-            <div>
+            <div className={css.container}>
 				<div className={css.inputBox}>
-					<input type="text" value={this.state.num}
+					<Input  type="text" value={this.state.num}
 					onChange={(e)=>{this.inputChange(e)}}/>
-					<button onClick={()=>{this.clickBtn}}>点击22</button>
+					<Button onClick={()=>{this.clickBtn}}>首页点击</Button>
 				</div>
-				<div>
-					{this.state.num}
+				<div className={css.word}>
+					{this.context.salary}
 				</div>
             </div>
         )

@@ -54,6 +54,7 @@ module.exports = {
 		alias: {
 			views: require('path').resolve(__dirname,'../views'),
 			src: require('path').resolve(__dirname,'../src'),
+			'react-dom': '@hot-loader/react-dom',
 			'vue$': 'vue/dist/vue.esm.js',
 		},
 		extensions: ['.js', '.vue', '.json']
@@ -65,7 +66,6 @@ module.exports = {
 				http_env: JSON.stringify(process.env.http_env)
 			}
 		}),
-		new webpack.HotModuleReplacementPlugin(), //设置这里
 		// 解决vender后面的hash每次都改变
 		new webpack.HashedModuleIdsPlugin(),
 		//编译后生成html并引入js和css

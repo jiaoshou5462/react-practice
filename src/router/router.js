@@ -11,19 +11,17 @@ import Activity from 'views/activity/activity';
 import { AppContainer } from 'react-hot-loader'; //设置这里
 
 const getRouter = () => (
-	<AppContainer>
     <Router history={history}>
         <div>
             <Head></Head>
-            <Switch>
-				<div className={css.container}>
+			<div className={css.container}>
+				<Switch>
 					<Route path="/login" component={Login}/>
 					<Route path="/activity" component={Activity}/>
 					<Route exact path="/" component={Home}/>
-				</div>
-            </Switch>
+				</Switch>
+			</div>
         </div>
     </Router>
-	</AppContainer>
 );
 export default getRouter;
