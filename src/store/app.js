@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import getRouter from '../router/router';
 import PropTypes from 'prop-types'
+import history from './history.js'
 
 class App extends Component {
 	static childContextTypes = {
@@ -17,10 +18,23 @@ class App extends Component {
 		};
 	}
 	render() {
+    let routeStr='';
+    history.listen(()=>{
+      if(history.location.pathname=='/login'){
+        
+      }else{
+       
+      }
+    })
 		return (
 			getRouter()
 		);
-	}
+  }
+  componentDidMount(){
+    // window.addEventListener('hashChange', () => {
+    //   console.log(1)
+    // })
+  }
 }
 
 //需要渲染什么数据

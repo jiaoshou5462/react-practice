@@ -1,0 +1,15 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing:border-box;
+	word-break: break-all;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+.text-ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

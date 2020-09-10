@@ -12,7 +12,7 @@ module.exports = merge(common, {
 		historyApiFallback: true,
 		host: "0.0.0.0",
 		useLocalIp: true,
-		openPage: 'home',
+		openPage: '/',
 		hot: true, //2热更新
 		//设置代理
 		proxy: {

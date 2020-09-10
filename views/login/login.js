@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class Login extends Component {
-    render() {
-        return (
-            <div>
-                this is Login~hi xht
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        this is Login~hi xht
+      </div>
+    )
+  }
 }
