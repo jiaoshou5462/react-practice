@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import getRouter from '../router/router';
 import PropTypes from 'prop-types'
-import history from './history.js'
+import history from '../router/history.js'
 
 class App extends Component {
 	static childContextTypes = {
